@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Route Optimization System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Railway Route Optimization System</h1>
+    <div class="card p-4 shadow">
+      <form id="routeForm">
+        <div class="mb-3">
+          <label for="source" class="form-label">Source Station</label>
+          <input type="text" id="source" class="form-control" placeholder="Enter source station" required>
+        </div>
+        <div class="mb-3">
+          <label for="destination" class="form-label">Destination Station</label>
+          <input type="text" id="destination" class="form-control" placeholder="Enter destination station" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Find Route</button>
+      </form>
+    </div>
+    <div id="output" class="mt-4"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
